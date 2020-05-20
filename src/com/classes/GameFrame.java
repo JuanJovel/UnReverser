@@ -21,7 +21,11 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 /**
- * The Class GameFrame.
+ * Class that defines the frame of the Unreverser game.
+ * 
+ * @author Juan Jovel (www.github.com/JuanJovel)
+ * @version 1.1
+ * 
  */
 @SuppressWarnings("serial")
 public class GameFrame extends JFrame {
@@ -55,8 +59,8 @@ public class GameFrame extends JFrame {
         setIconImage(windowIcon.getImage());
         Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
         setSize(FRAME_WIDTH, FRAME_HEIGHT);
-        int xLocation = (screenDimension.width/2) - (FRAME_WIDTH/2);
-        int yLocation = (screenDimension.height/2) - (FRAME_HEIGHT/2);
+        int xLocation = (screenDimension.width / 2) - (FRAME_WIDTH / 2);
+        int yLocation = (screenDimension.height / 2) - (FRAME_HEIGHT / 2);
         setLocation(xLocation, yLocation);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(new BorderLayout(0, 20));
@@ -89,7 +93,7 @@ public class GameFrame extends JFrame {
         JPanel centerPanel = new JPanel();
         getContentPane().add(centerPanel, BorderLayout.CENTER);
         centerPanel.setLayout(new BorderLayout(0, 5));
-        
+
         // Initializes and sets the properties of the solution field text box.
         solutionField = new JTextField();
         solutionField.setHorizontalAlignment(SwingConstants.CENTER);
@@ -98,7 +102,7 @@ public class GameFrame extends JFrame {
         solutionField.addActionListener(new ReverseListener());
         centerPanel.add(solutionField);
         solutionField.setColumns(20);
-        
+
         // Initializes and sets the properties of the reversed word label.
         wordLabel = new JLabel("Click BEGIN to start!");
         wordLabel.setFont(new Font("Tahoma", Font.PLAIN, 30));
@@ -112,12 +116,12 @@ public class GameFrame extends JFrame {
 
         // Declares and initializes a south panel.
         JPanel southPanel = new JPanel();
-        
+
         // Initializes and sets the properties of the begin button.
         beginButton = new JButton("BEGIN");
         beginButton.addActionListener(new BeginListener());
         southPanel.add(beginButton);
-        
+
         // Initializes and sets the properties of the try again button.
         tryAgain = new JButton("AGAIN");
         tryAgain.addActionListener(new TryAgainListener());

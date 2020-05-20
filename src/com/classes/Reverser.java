@@ -5,7 +5,7 @@ package com.classes;
  * A class that reverses Strings.
  * 
  * @author Juan Jovel (www.github.com/JuanJovel)
- * @version 1.0.1
+ * @version 1.1
  *
  */
 public class Reverser {

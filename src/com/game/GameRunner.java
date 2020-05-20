@@ -5,6 +5,10 @@ import com.classes.GameFrame;
 
 /**
  * Runs the game.
+ * 
+ * @author Juan Jovel (www.github.com/JuanJovel)
+ * @version 1.0.0
+ * 
  */
 public class GameRunner {
 

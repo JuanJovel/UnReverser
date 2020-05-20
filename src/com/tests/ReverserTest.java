@@ -10,7 +10,7 @@ import org.junit.Test;
  * A class that tests the Reverser class.
  * 
  * @author Juan Jovel (www.github.com/JuanJovel)
- * @version 1.0.0
+ * @version 1.2
  */
 public class ReverserTest {
     private Reverser reverser;
